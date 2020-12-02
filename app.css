@@ -1,0 +1,11 @@
+#clickArea{
+    width:500px;
+    height: 300px;
+    border: 2px solid black;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+}
