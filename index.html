@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div>
-        Timer: <span id="timer">0</span> <br>
+    <div id="stats">
+        <h1>Click in the Box</h1>
+        <h2>How fast can you go?</h2>
+        Timer: <span id="timer">0</span>s <br>
         Score: <span id="score">0</span> <br>
-        Clicks per Second:<span id="CPS">0</span> <br>
+        Clicks per Second: <span id="CPS">0</span> <br>
+        <input type="radio" id="1s" name="gameLength" onclick="changeGameLength()">
+        <label for="1s">1s Test</label>
+        <input type="radio" id="5s" name="gameLength" onclick="changeGameLength()" checked>
+        <label for="5s">5s Test</label>
+        <input type="radio" id="10s" name="gameLength" onclick="changeGameLength()">
+        <label for="10s">10s Test</label>
+        <input type="radio" id="30s" name="gameLength" onclick="changeGameLength()">
+        <label for="30s">30s Test</label>
+        <input type="radio" id="60s" name="gameLength" onclick="changeGameLength()">
+        <label for="60s">60s Test</label>
     </div>
     <div id="clickArea">
         <button id="startButton" onclick="startGame()">Start</button>
